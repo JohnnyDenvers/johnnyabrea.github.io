@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -6,27 +7,24 @@
 	<title>Johnny Denvers | Software Developer </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Johnny Denvers" />
-	<meta name="description" content="Portfolio for Johnny Denvers.">
-	<meta name="keywords" content="portfolio, johnny, denvers, web, developer, full-stack developer, full stack, full-stack, software engineer">
+	<meta name="description" content="Portfolio for Johnny Denvers." />
+	<meta name="keywords"  content="portfolio, johnny, denvers, web, developer, full-stack developer, full stack, full-stack, software engineer" />
 	<meta name="Resource-type" content="Document" />
 
-	<link href="https://fonts.googleapis.com/css?family=Rokkitt:400,700" rel="stylesheet" type="text/css">
-	<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
 	<style type="text/css">
 	@CHARSET "ISO-8859-1";
-
-
 
 
 /* Custom CSS
  * --------------------------------------- */
 body{
     font-family: arial,helvetica;
-    color: #333;
     color: rgba(0,0,0,0.5);
     background-color: #343434;
 }
@@ -39,34 +37,49 @@ h1{
 p{
     font-size: 1.5em;
     font-family: 'Raleway', sans-serif;
-    color: #222;
     color: #f1cf63;
 }
+.section{
+    text-align:center;
+    padding: 0px 100px;
+}
 
+#c-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:80%;
+    position: absolute;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+}
 #section0 h1{ margin-bottom: 0.3em; }
 #section0 span{ animation: blink 1s infinite; }
 @keyframes blink{ to{opacity: .0;} }
 
-#sub-heading{ 
+#sub-heading{
 	/* border: 1px solid #333; */
 	border: 1px solid #f1cf63;
-	padding: 20px 30px; 
-	margin: 0px 50px; 
+	padding: 20px 30px;
+	margin: 0px 50px;
 	}
-	
+
 #mailto { margin-top: 30px; text-align: center; font-size: 14px;}
 #mailto a{
-	text-decoration: none; 
-	color: #333; 
-	    color: #f1cf63;
+	text-decoration: none;
+	color: #f1cf63;
 	-webkit-transition: color: 0.5s; /* For Safari 3.1 to 6.0 */
-    transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 #mailto a:hover{
 	color: #AAA;
 }
- 
+
 /* Landscape phones and down */
 @media (max-width: 480px) { h1{ font-size: 4em !important; } }
 
@@ -75,10 +88,14 @@ p{
 
 </head>
 <body>
-	<div id="section0">
-		<h1>Here's Johnny!<span>|</span></h1>
-		<p id="sub-heading">I am a Software Developer currently based in the Philippines..</p>
-		<p id="mailto">Email me at <a href="mailto:johnnydenvers@gmail.com?Subject=Hello%20Johnny!" target="_top">johnnydenvers@gmail.com</a></p>				
+	<div class="section " id="section0">
+		<div id="c-container" >
+			<div id="right">
+				<h1>Here's Johnny!<span>|</span></h1>
+				<p id="sub-heading">I am a Software Developer currently based in the Philippines.</p>
+				<p id="mailto">Email me at <a href="mailto:johnnydenvers@gmail.com?Subject=Hello%20Johnny!" target="_top">johnnydenvers@gmail.com</a></p>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
